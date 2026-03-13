@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/resultDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|end"
+        android:padding="16dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="64sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                style="@style/CalcButton.Orange"
+                android:gravity="center"
+                android:onClick="onACClick"
+                android:text="AC"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton.Orange"
+                android:gravity="center"
+                android:onClick="onSignClick"
+                android:text="⌫"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton.Orange"
+                android:gravity="center"
+                android:onClick="onPercentClick"
+                android:text="%"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton.Orange"
+                android:gravity="center"
+                android:onClick="onOperatorClick"
+                android:text="÷"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onNumberClick"
+                android:text="7"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onNumberClick"
+                android:text="8"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onNumberClick"
+                android:text="9"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton.Orange"
+                android:gravity="center"
+                android:onClick="onOperatorClick"
+                android:text="×"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onNumberClick"
+                android:text="4"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onNumberClick"
+                android:text="5"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onNumberClick"
+                android:text="6"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton.Orange"
+                android:gravity="center"
+                android:onClick="onOperatorClick"
+                android:text="-"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onNumberClick"
+                android:text="1"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onNumberClick"
+                android:text="2"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onNumberClick"
+                android:text="3"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton.Orange"
+                android:gravity="center"
+                android:onClick="onOperatorClick"
+                android:text="+"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                style="@style/CalcButton.Orange"
+                android:gravity="center"
+                android:onClick="onActionClick"
+                android:text="⇄"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onNumberClick"
+                android:text="0"
+                android:textSize="34sp" />
+
+            <Button
+                style="@style/CalcButton"
+                android:gravity="center"
+                android:onClick="onDecimalClick"
+                android:text=","
+                android:textSize="34sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/CalcButton.Equal"
+                android:background="@drawable/equal_button_shape"
+                android:gravity="center"
+                android:onClick="onEqualsClick"
+                android:textSize="34sp" >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="="
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

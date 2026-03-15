@@ -15,7 +15,7 @@
         android:layout_weight="1"
         android:gravity="bottom|end"
         android:padding="16dp"
-        android:text="0"
+        android:text="@string/_0_"
         android:textColor="#000000"
         android:textSize="64sp" />
 
@@ -30,29 +30,37 @@
                 style="@style/CalcButton.Orange"
                 android:gravity="center"
                 android:onClick="onACClick"
-                android:text="AC"
-                android:textSize="34sp" />
+                android:text="@string/ac"
+                android:textColor="#EF6C00"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton.Orange"
                 android:gravity="center"
                 android:onClick="onSignClick"
-                android:text="⌫"
-                android:textSize="34sp" />
+                android:text="@string/backspace"
+                android:textColor="#EF6C00"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton.Orange"
                 android:gravity="center"
                 android:onClick="onPercentClick"
-                android:text="%"
-                android:textSize="34sp" />
+                android:text="@string/percent"
+                android:textColor="#EF6C00"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton.Orange"
                 android:gravity="center"
                 android:onClick="onOperatorClick"
-                android:text="÷"
-                android:textSize="34sp" />
+                android:text="@string/division"
+                android:textColor="#EF6C00"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
         </TableRow>
 
         <TableRow>
@@ -61,29 +69,34 @@
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onNumberClick"
-                android:text="7"
-                android:textSize="34sp" />
+                android:text="@string/_7"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onNumberClick"
-                android:text="8"
-                android:textSize="34sp" />
+                android:text="@string/_8"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onNumberClick"
-                android:text="9"
-                android:textSize="34sp" />
+                android:text="@string/_9"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton.Orange"
                 android:gravity="center"
                 android:onClick="onOperatorClick"
-                android:text="×"
-                android:textSize="34sp" />
+                android:text="@string/multiplication"
+                android:textColor="#EF6C00"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
         </TableRow>
 
         <TableRow>
@@ -92,29 +105,34 @@
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onNumberClick"
-                android:text="4"
-                android:textSize="34sp" />
+                android:text="@string/_4"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onNumberClick"
-                android:text="5"
-                android:textSize="34sp" />
+                android:text="@string/_5"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onNumberClick"
-                android:text="6"
-                android:textSize="34sp" />
+                android:text="@string/_6"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton.Orange"
                 android:gravity="center"
                 android:onClick="onOperatorClick"
-                android:text="-"
-                android:textSize="34sp" />
+                android:text="@string/minus"
+                android:textColor="#EF6C00"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
         </TableRow>
 
         <TableRow>
@@ -123,29 +141,34 @@
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onNumberClick"
-                android:text="1"
-                android:textSize="34sp" />
+                android:text="@string/_1"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onNumberClick"
-                android:text="2"
-                android:textSize="34sp" />
+                android:text="@string/_2"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onNumberClick"
-                android:text="3"
-                android:textSize="34sp" />
+                android:text="@string/_3"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton.Orange"
                 android:gravity="center"
                 android:onClick="onOperatorClick"
-                android:text="+"
-                android:textSize="34sp" />
+                android:text="@string/plus"
+                android:textColor="#EF6C00"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
         </TableRow>
 
         <TableRow>
@@ -154,22 +177,26 @@
                 style="@style/CalcButton.Orange"
                 android:gravity="center"
                 android:onClick="onActionClick"
-                android:text="⇄"
-                android:textSize="34sp" />
+                android:text="@string/exit"
+                android:textColor="#EF6C00"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onNumberClick"
-                android:text="0"
-                android:textSize="34sp" />
+                android:text="@string/_0"
+                android:textSize="34sp"
+                tools:ignore="DuplicateSpeakableTextCheck,VisualLintButtonSize" />
 
             <Button
                 style="@style/CalcButton"
                 android:gravity="center"
                 android:onClick="onDecimalClick"
-                android:text=","
-                android:textSize="34sp" />
+                android:text="@string/decimal"
+                android:textSize="34sp"
+                tools:ignore="VisualLintButtonSize" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 style="@style/CalcButton.Equal"
@@ -183,13 +210,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:clickable="false"
-                    android:text="="
+                    android:text="@string/equal"
                     android:textColor="@color/white"
                     android:textSize="34sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TextContrastCheck" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </TableRow>
     </TableLayout>

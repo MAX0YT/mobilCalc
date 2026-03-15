@@ -1,6 +1,6 @@
 package com.example.calcvalovpr23101;
 
-import android.content.Intent;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -52,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
     public void onPercentClick(View view) {
         applyPercent();
     }
+    public void onActionClick(View view) {
+        finish();
+    }
 
     private void appendNumber(String number) {
         if (operator.isEmpty()) {
@@ -83,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
         updateDisplay();
     }
 
+    @SuppressLint("SetTextI18n")
     private void calculate() {
         if (operator.isEmpty() || secondNum.isEmpty()) {
             return;
@@ -142,27 +146,6 @@ public class MainActivity extends AppCompatActivity {
         }
         updateDisplay();
     }
-    private void toggleSign() {
-        if (operator.isEmpty()) {
-            if (!firstNum.isEmpty()) {
-                if (firstNum.startsWith("-")) {
-                    firstNum = firstNum.substring(1);
-                } else {
-                    firstNum = "-" + firstNum;
-                }
-            }
-        } else {
-            if (!secondNum.isEmpty()) {
-                if (secondNum.startsWith("-")) {
-                    secondNum = secondNum.substring(1);
-                } else {
-                    secondNum = "-" + secondNum;
-                }
-            }
-        }
-        updateDisplay();
-    }
-
     private void applyPercent() {
         if (operator.isEmpty()) {
             if (!firstNum.isEmpty()) {

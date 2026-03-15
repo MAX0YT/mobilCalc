@@ -80,6 +80,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void setOperator(String op) {
         if (firstNum.isEmpty()) {
+            if (op.equals("-")){
+                firstNum = "0";
+                operator = "-";
+                updateDisplay();
+            }
             return;
         }
         operator = op;
